@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="color-scheme" content="dark" />
+  <title>Support — Number Sense</title>
+  <meta name="description" content="Support page for Number Sense: help, FAQs, and contact." />
+
+  <style>
+    :root{
+      --bg:#1D5C34;
+      --card:rgba(0,0,0,.22);
+      --card2:rgba(0,0,0,.30);
+      --text:#ffffff;
+      --muted:rgba(255,255,255,.75);
+      --border:rgba(255,255,255,.18);
+      --accent:#1D5C34;
+      --shadow:0 10px 30px rgba(0,0,0,.25);
+      --radius:18px;
+      --max:960px;
+      --sans:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial;
+    }
+
+    *{box-sizing:border-box}
+
+    body{
+      margin:0;
+      font-family:var(--sans);
+      color:var(--text);
+      background:var(--bg);
+      line-height:1.5;
+    }
+
+    a{color:inherit;text-decoration:none}
+    a:hover{text-decoration:underline}
+
+    .wrap{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:32px 18px 56px;
+    }
+
+    header{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:16px;
+      flex-wrap:wrap;
+      margin-bottom:18px;
+    }
+
+    h1{
+      margin:0;
+      font-size:22px;
+      letter-spacing:-.02em;
+    }
+
+    .subtitle{
+      font-size:14px;
+      color:var(--muted);
+      margin-top:4px;
+    }
+
+    .pill{
+      padding:10px 14px;
+      border-radius:999px;
+      background:rgba(255,255,255,.14);
+      border:1px solid var(--border);
+      font-size:14px;
+      font-weight:600;
+    }
+
+    .hero{
+      padding:24px;
+      border-radius:var(--radius);
+      background:var(--card);
+      border:1px solid var(--border);
+      box-shadow:var(--shadow);
+    }
+
+    .hero h2{
+      margin:0 0 10px;
+      font-size:28px;
+      letter-spacing:-.03em;
+    }
+
+    .hero p{
+      margin:0 0 16px;
+      color:var(--muted);
+      max-width:70ch;
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding:12px 16px;
+      border-radius:12px;
+      border:1px solid var(--border);
+      background:rgba(255,255,255,.14);
+      font-weight:650;
+    }
+
+    /* Adapted for green background */
+    .btn.primary{
+      background:#ffffff;
+      color:#1D5C34;
+      border:none;
+    }
+
+    .btn.primary:hover{
+      opacity:.92;
+      text-decoration:none;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:1.2fr .8fr;
+      gap:16px;
+      margin-top:16px;
+    }
+
+    @media(max-width:860px){
+      .grid{grid-template-columns:1fr}
+    }
+
+    .card{
+      border-radius:var(--radius);
+      background:var(--card2);
+      border:1px solid var(--border);
+      padding:18px;
+    }
+
+    .card h3{
+      margin:0 0 10px;
+      font-size:16px;
+    }
+
+    details{
+      border-radius:14px;
+      background:rgba(0,0,0,.18);
+      border:1px solid var(--border);
+      padding:12px;
+      margin:10px 0;
+    }
+
+    summary{
+      cursor:pointer;
+      font-weight:650;
+    }
+    summary::-webkit-details-marker{display:none}
+
+    footer{
+      margin-top:26px;
+      padding-top:18px;
+      border-top:1px solid var(--border);
+      color:var(--muted);
+      font-size:13px;
+      display:flex;
+      justify-content:space-between;
+      flex-wrap:wrap;
+      gap:8px;
+    }
+  </style>
+</head>
+
+<body>
+<div class="wrap">
+
+  <header>
+    <div>
+      <h1>Support — Number Sense</h1>
+      <div class="subtitle">
+        An intuitive number puzzle where you place values by feel
+      </div>
+    </div>
+
+    <a class="pill"
+       href="mailto:iterokhin.dev@gmail.com?subject=Feel%20Number%20—%20Support&body=Hi!%0A%0ADevice%20model%3A%0AiOS%20version%3A%0A%0AWhat%20happened%3A%0A%0ASteps%20to%20reproduce%3A%0A">
+      Email support
+    </a>
+  </header>
+
+  <section class="hero">
+    <h2>Need help?</h2>
+    <p>
+      If you run into an issue, unexpected behavior, or have a question about
+      Number Sense, feel free to reach out. Describing what happened and what
+      you were doing before the issue appeared helps a lot.
+    </p>
+
+    <a class="btn primary"
+       href="mailto:iterokhin.dev@gmail.com?subject=Feel%20Number%20—%20Support&body=Hi!%0A%0ADevice%20model%3A%0AiOS%20version%3A%0A%0AWhat%20happened%3A%0A%0ASteps%20to%20reproduce%3A%0A">
+      Contact support
+    </a>
+  </section>
+
+  <div class="grid">
+    <section class="card">
+      <h3>FAQ</h3>
+
+      <details>
+        <summary>How do I play?</summary>
+        <p>
+          You receive numbers from <strong>1 to 1000</strong>.
+          Each number must be placed into one of the available tiles.
+          The goal is to keep the tiles ordered from bottom to top.
+          Once placed, numbers cannot be moved.
+        </p>
+      </details>
+
+      <details>
+        <summary>How do levels work?</summary>
+        <p>
+          The game starts with a single tile.
+          Each new level adds more tiles, up to <strong>20</strong>.
+          As the number of tiles increases, relying on intuition becomes essential.
+        </p>
+      </details>
+
+      <details>
+        <summary>I found a bug or issue</summary>
+        <p>
+          Please contact support and include:
+          <br>• Device model
+          <br>• iOS version
+          <br>• What you were doing before the issue appeared
+        </p>
+      </details>
+    </section>
+
+    <aside class="card">
+      <h3>Troubleshooting</h3>
+      <ol>
+        <li>Make sure you’re using the latest version of the app.</li>
+        <li>Restart the app.</li>
+        <li>Restart your device.</li>
+        <li>If needed, reinstall the app (local progress may be lost).</li>
+      </ol>
+    </aside>
+  </div>
+
+  <footer>
+    <div>© <span id="y"></span> Terokhin Yegor</div>
+    <div>Number Sense</div>
+  </footer>
+
+</div>
+
+<script>
+  document.getElementById("y").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
